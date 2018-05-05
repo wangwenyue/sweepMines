@@ -223,7 +223,7 @@ var sweepMine = (row, col, mineNum, isBoom) => {
     }
     bindCells()
 }
-var stopTime
+
 var gameStart = (row, col, mineNum) => {
     var mineLeft = e('.mineLeft')
     mineLeft.innerText = `${mineNum}`
@@ -280,7 +280,7 @@ var isBoom = 0
 var row = 16
 var col = 16
 var mineNum = 40
-
+var stopTime
 var __main = () => {
     levelSelector()
     gameStart(row, col, mineNum)
