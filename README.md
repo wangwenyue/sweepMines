@@ -1,2 +1,2 @@
 # sweepMines
-nothing new here
+[Demo:](https://wangwenyue.github.io/sweepMines/)
