@@ -70,11 +70,11 @@ var initMap = (row, col, mineNum) => {
 
     var makeMap = () => {
         initBlankMap(row, col)
-        log('initBlankMap successed')
+        //log('initBlankMap successed')
         randomMine(row, col, mineNum)
-        log('randomMine successed')
+        //log('randomMine successed')
         initFinalMap(row, col, map)
-        log('initFinalMap successed')
+        //log('initFinalMap successed')
     }
 
     makeMap()
@@ -112,7 +112,6 @@ var renderHtml = (map) => {
         renderRow()
         renderCol()
     }
-
     renderMap()
 }
 
@@ -121,7 +120,6 @@ var sweepMine = (row, col, mineNum, isBoom) => {
 
     var checkWin = (safeCell) => {
         if (safeCell === (row * col - mineNum) && isBoom === 0) {
-            log('checkWin 被执行了')
             alert('You win')
         }
     }
@@ -217,7 +215,6 @@ var sweepMine = (row, col, mineNum, isBoom) => {
                 })
             }
         }
-
         bindCell(row)
         bindFlag(row)
     }
@@ -240,7 +237,7 @@ var gameStart = (row, col, mineNum) => {
     box.innerHTML = ''
     var map = initMap(row, col, mineNum)
     renderHtml(map)
-    sweepMine(row, col, mineNum)
+    sweepMine(row, col, mineNum, isBoom)
 }
 
 var levelSelector = () => {
@@ -271,7 +268,7 @@ var levelSelector = () => {
     }
     let restart = e('.restart')
     restart.addEventListener('click', (event) => {
-        console.log('restart clicked', mineNum)
+        log('restart clicked', mineNum)
         gameStart(row, col, mineNum)
     })
 }
