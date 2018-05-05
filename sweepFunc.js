@@ -76,8 +76,8 @@ var initMap = (row, col, mineNum) => {
         initFinalMap(row, col, map)
         //log('initFinalMap successed')
     }
-
     makeMap()
+    log(map)
     return map
 }
 
@@ -249,26 +249,26 @@ var levelSelector = () => {
                 row = 9
                 col = 9
                 mineNum = 10
-                log('Fresh clicked', mineNum)
+                //log('Fresh clicked', mineNum)
                 gameStart(row, col, mineNum)
             } else if (self.innerHTML === 'Normal') {
                 row = 16
                 col = 16
                 mineNum = 40
-                log('Normal clicked', mineNum)
+                //log('Normal clicked', mineNum)
                 gameStart(row, col, mineNum)
             } else if (self.innerHTML === 'Hell') {
                 row = 30
                 col = 30
                 mineNum = 99
-                log('Hell clicked', mineNum)
+                //log('Hell clicked', mineNum)
                 gameStart(row, col, mineNum)
             }
         })
     }
     let restart = e('.restart')
     restart.addEventListener('click', (event) => {
-        log('restart clicked', mineNum)
+        //log('restart clicked', mineNum)
         gameStart(row, col, mineNum)
     })
 }
