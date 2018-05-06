@@ -199,14 +199,14 @@ var sweepMine = (row, col, mineNum, isBoom) => {
                     if (self.tagName === 'LI') {
                         let imgTagClasslist = self.children[1].classList
                         let mineLeft = e('.mineLeft')
-                        //插旗子操作
+                        //stick flag
                         if (imgTagClasslist.contains('hide') && self.style.background !== 'white') {
                             if (mineNumNow !== 0) {
                                 mineNumNow--
                             }
                             imgTagClasslist.remove('hide')
                         } else if (self.style.background !== 'white') {
-                            //取消旗子操作
+                            //cancel flag
                             imgTagClasslist.add('hide')
                             mineNumNow++
                         }
