@@ -3,4 +3,4 @@
 
 ### 原生javascript编写的扫雷程序。
 
-![](demo.gif)
+![](pic/demo.gif)

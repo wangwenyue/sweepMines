@@ -68,7 +68,7 @@ body {
 }
 
 .boom {
-    background: url('boom.svg') no-repeat 2.5px 2px;
+    background: url('../pic/boom.svg') no-repeat 2.5px 2px;
     background-size: 18px 18px;
 }
 

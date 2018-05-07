@@ -102,7 +102,7 @@ var renderHtml = (map) => {
                 y[i].innerHTML +=
                     `<li class="col y-${j} num-${p}" data-y="${j}">
                     <span>${p}</span>
-                    <img src="flag.svg" class="img-flag hide">
+                    <img src="pic/flag.svg" class="img-flag hide">
                 </li>`
             }
         }
