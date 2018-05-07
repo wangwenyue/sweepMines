@@ -3,7 +3,7 @@ var log = console.log.bind(console)
 var e = (selector) => {
     let ele = document.querySelector(selector)
     if (!ele) {
-        alert(`${selector} not founded`)
+        alert(`${selector} not found`)
     } else {
         return ele
     }
