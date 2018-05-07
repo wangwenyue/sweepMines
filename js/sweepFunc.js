@@ -190,7 +190,7 @@ var sweepMine = (row, col, mineNum, isBoom) => {
         var bindFlag = (row) => {
             for (let i = 0; i < row.length; i++) {
                 var mineNumNow = mineNum
-                row[i].addEventListener('contextmenu', function(event) {
+                row[i].addEventListener('contextmenu', (event) => {
                     event.preventDefault();
                     var self = event.target
                     if (self.tagName != 'LI') {
