@@ -1,6 +1,6 @@
 # sweepMines
 [Demo here](https://wangwenyue.github.io/sweepMines/)
 
-### 简单的扫雷程序，原生js
+### 原生javascript编写的扫雷程序。
 
 ![](demo.gif)
