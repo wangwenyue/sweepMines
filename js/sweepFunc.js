@@ -191,7 +191,7 @@ var sweepMine = (row, col, mineNum, isBoom) => {
             for (let i = 0; i < row.length; i++) {
                 var mineNumNow = mineNum
                 row[i].addEventListener('contextmenu', (event) => {
-                    event.preventDefault();
+                    event.preventDefault()
                     var self = event.target
                     if (self.tagName != 'LI') {
                         self = event.target.parentElement
