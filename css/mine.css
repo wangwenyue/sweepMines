@@ -15,17 +15,20 @@ body {
     color: white;
     border-radius: 3px;
     outline: none;
-    cursor:pointer;
+    cursor: pointer;
 }
+
 .level button:hover {
     background: rgb(0, 0, 0)
 }
+
 .row {
     margin: 0;
     padding: 0;
     overflow: hidden;
     letter-spacing: -8px;
 }
+
 .col {
     display: inline-block;
     background: rgba(37, 212, 105, 0.32);
@@ -44,7 +47,7 @@ body {
     opacity: 0;
     font-weight: bold;
     /* 标准箭头 */
-    cursor:default;
+    cursor: default;
 }
 
 .col:hover {
@@ -82,37 +85,47 @@ body {
 .info {
     margin-top: 30px;
 }
+
 .info p {
     display: inline-block;
     width: 130px;
     margin: 0 10px;
 }
+
 .info p span {
     color: rgb(67, 183, 189);
 }
 
 /* number color */
+
 .num-1 {
     color: rgb(18, 153, 235);
 }
+
 .num-2 {
     color: rgb(255, 45, 178);
 }
+
 .num-3 {
     color: rgb(109, 24, 176);
 }
+
 .num-4 {
     color: rgb(8, 13, 235);
 }
+
 .num-5 {
     color: rgb(25, 167, 45);
 }
+
 .num-6 {
     color: rgb(149, 140, 102);
 }
+
 .num-7 {
     color: rgb(68, 255, 237);
 }
+
 .num-8 {
     color: rgb(125, 254, 154);
 }
