@@ -269,9 +269,6 @@ var levelSelector = () => {
             } else if (self.innerHTML === 'Normal') {
 
                 let para = new Para()
-                para.row = 16
-                para.col = 16
-                para.mineNum = 40
                 setInitPara(para.row, para.col, para.mineNum)
                 gameStart(para.row, para.col, para.mineNum, para.isBoom)
 
