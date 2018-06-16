@@ -13,3 +13,11 @@
 * 用事件监听的方式，监测并标记地雷（插旗子标记地雷，标记之后不能点击）
 * 用递归搜索的方式，自动连锁打开雷区
 * 显示剩余地雷数目（总的雷数减去插旗的数量）
+
+#### Update
+
+* 新增Electron版本
+- 使用指南：
+- cd SweepMines_Electron    进入文件夹
+- yarn install              安装依赖
+- yarn run mac              生成SweepMines.app 可在macOS环境下运行
