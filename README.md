@@ -20,4 +20,6 @@
 - 使用指南：
 - cd SweepMines_Electron    进入文件夹
 - yarn install              安装依赖
-- yarn run mac              生成SweepMines.app 可在macOS环境下运行
+- yarn run build:mac        生成SweepMines.app 可在macOS环境下运行
+- yarn run build:win64      生成SweepMines.exe 可在win64环境下运行
+- yarn run build:win32      生成SweepMines.exe 可在win32环境下运行

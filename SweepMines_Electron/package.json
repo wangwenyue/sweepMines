@@ -5,7 +5,9 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "mac": "electron-packager ./ SweepMines --platform=darwin --out=./dist --arch=all --electron-version=2.0.0 --overwrite"
+    "build:mac": "electron-packager ./ SweepMines --platform=darwin --out=./dist --arch=all --electron-version=2.0.0 --overwrite",
+    "build:win64": "electron-packager ./ SweepMines --platform=win32 --out=./dist --arch=x64 --electron-version=2.0.0 --overwrite",
+    "build:win32": "electron-packager ./ SweepMines --platform=win32 --out=./dist --arch=ia32 --electron-version=2.0.0 --overwrite"
   },
   "author": "Kowalski",
   "license": "MIT",
